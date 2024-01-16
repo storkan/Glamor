@@ -1,0 +1,49 @@
+###################
+#Description of dynamics
+###################
+#atomnumber atomtype  x/A y/A z/A dynamic_weight
+%voids
+1 -2.04880   -0.75560   -3.72053
+2 -3.04880   -0.75560   -3.72054
+3 -4.04880   -0.75560   -3.72055
+%end_voids
+#dynamic field contains the following lines:
+#-NrOfPrimary Input lines
+#-primary input lines, composed of
+# atomnumber NrOfOtherAtomicPlaces NrOfVoids weight
+#-secondary input lines 
+# atomnr weight
+#or
+# voidnr weight
+%dynamic
+2                      !Nr of primary input Lines
+1 2 0 0.333333333333   !primary input line refering to another atom
+2 0.3333333333         !secondary input line
+3 0.3333333333         !secondary input line 
+4  2  3  0.166666666   !primary input line
+5 0.166666666          !secondary input line refering to another atom
+6 0.166666666          !secondary input line refering to another atom
+1 0.166666666          !secondary input line refering to a void
+2 0.166666666          !secondary input line refering to a void
+3 0.166666666          !secondary input line refering to a void
+%end_dynamic
+######################
+#J-coupling-Information
+######################
+#coupled_pairs jcoupling
+%jcoupling
+1 7 10.0
+%end_jcoupling
+#####################
+#single site information
+######################
+#atomnumber static_occupation_factor(SOF) T1rho/s
+%sitespecific
+1 1.0
+2 0.3 0.011
+3 1.0
+4 1.0
+5
+6 0.3
+7 0.1
+%end_sitespecific

@@ -1,0 +1,38 @@
+###################
+#Description of dynamics
+###################
+#atomnumber atomtype  x/A y/A z/A dynamic_weight
+%voids
+1 -2.04880   -0.75560   -3.72053
+2 -3.04880   -0.75560   -3.72054
+3 -4.04880   -0.75560   -3.72055
+%end_voids
+#dynamic field contains the following lines:
+#-NrOfPrimary Input lines
+#-primary input lines, composed of
+# atomnumber NrOfOtherAtomicPlaces NrOfVoids weight
+#-secondary input lines 
+# atomnr weight
+#or
+# voidnr weight
+%dynamic
+6 !Nr of prim input lines
+1           2           0  0.33333333333333331     
+9  0.33333333333333331     
+16  0.33333333333333331     
+2           2           0  0.33333333333333331     
+10  0.33333333333333331     
+17  0.33333333333333331     
+3           2           0  0.33333333333333331     
+11  0.33333333333333331     
+18  0.33333333333333331     
+5           2           0  0.33333333333333331     
+12  0.33333333333333331     
+20  0.33333333333333331     
+6           2           0  0.33333333333333331     
+13  0.33333333333333331     
+21  0.33333333333333331     
+7           2           0  0.33333333333333331     
+15  0.33333333333333331     
+22  0.33333333333333331   
+%end_dynamic 

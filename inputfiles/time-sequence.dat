@@ -1,0 +1,7 @@
+
+%timetype                    
+linear               #time axis specification: specific values (grid) or time=startvalue+i*increment (linear)
+%timescale                   
+0.0 0.00001 80        #startvalue increment numberofpoints in seconds
+
+
