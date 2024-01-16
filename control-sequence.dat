@@ -1,0 +1,17 @@
+%general
+verbosity                   1111111
+%pulssequence
+kappa                       0.367553   #scaling factor for REDOR sequence
+%structureinput
+inputtype                   xyz
+staticfile                  glycin-1C-40H.XYZ
+recoupledisotope            1H
+observedisotope             13C
+recoupledatomtype           H
+observedatomtype            C
+%powderaverage
+powderaverage               auto
+convergence_criterion       1E-3
+
+%dynamicsfile
+dynamicfilename             glycin-40-dyn.dat
